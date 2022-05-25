@@ -1,0 +1,452 @@
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /ko-app/entrypoint cp /ko-app/entrypoint /tekton/bin/entrypoint
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /tekton/scripts/script-0-n8tsq sh /tekton/scripts/script-0-n8tsq
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/sh /tekton/scripts/script-0-n8tsq
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/rm -rf /workspace/output/./*
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/rm -rf /workspace/output/./* 0
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/rm -rf /workspace/output/./.[!.]*
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/rm -rf /workspace/output/./.[!.]* 0
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/rm -rf /workspace/output/./..?*
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/rm -rf /workspace/output/./..?* 0
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /ko-app/git-init -url=https://github.com/nadgowdas/test-app-build -revision= -refspec= -path=/workspace/output/. -sslVerify=true -submodules=true -depth=1 -sparseCheckoutDirectories=
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/bin/git init /workspace/output/.
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/bin/git init /workspace/output/. 0
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/bin/git remote add origin https://github.com/nadgowdas/test-app-build
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/bin/git remote add origin https://github.com/nadgowdas/test-app-build 0
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/bin/git config core.sshCommand "ssh -o StrictHostKeyChecking=accept-new"
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/bin/git config core.sshCommand "ssh -o StrictHostKeyChecking=accept-new" 0
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/bin/git config http.sslVerify true
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/bin/git config http.sslVerify true 0
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/bin/git symbolic-ref HEAD refs/remotes/origin/HEAD
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/bin/git symbolic-ref HEAD refs/remotes/origin/HEAD 0
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/bin/git fetch --recurse-submodules=yes --depth=1 origin --update-head-ok --force HEAD
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/libexec/git-core/git-remote-https origin https://github.com/nadgowdas/test-app-build
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/libexec/git-core/git-remote-https origin https://github.com/nadgowdas/test-app-build 128
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /usr/bin/git fetch --recurse-submodules=yes --depth=1 origin --update-head-ok --force HEAD 128
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /ko-app/git-init -url=https://github.com/nadgowdas/test-app-build -revision= -refspec= -path=/workspace/output/. -sslVerify=true -submodules=true -depth=1 -sparseCheckoutDirectories= 1
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/sh /tekton/scripts/script-0-n8tsq 1
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /ko-app/entrypoint step-init step-clone
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/sh -c "scriptfile="/tekton/scripts/script-0-n8tsq"
+touch ${scriptfile} && chmod +x ${scriptfile}
+cat > ${s" "riptfile} << '_EOF_'
+IyEvdXNyL2Jpbi9lbnYgc2gKc2V0IC1ldQoKaWYgWyAiJHtQQVJBTV9WRVJCT1NFfSIgPSAidHJ1ZS" gXSA7IHRoZW4KICBzZXQgLXgKZmkKCmlmIFsgIiR7V09SS1NQQUNFX0JBU0lDX0FVVEhfRElSRUNUT1JZX0JPVU5EfSIgPSAidH 1ZSIgXSA7IHRoZW4KICBjcCAiJHtXT1JLU1BBQ0VfQkFTSUNfQVVUSF9ESVJFQ1RPUllfUEFUSH0vLmdpdC1jcmVkZW50aWFscy gIiR7UEFSQU1fVVNFUl9IT01FfS8uZ2l0LWNyZWRlbnRpYWxzIgogIGNwICIke1dPUktTUEFDRV9CQVNJQ19BVVRIX0RJUkVDVE SWV9QQVRIfS8uZ2l0Y29uZmlnIiAiJHtQQVJBTV9VU0VSX0hPTUV9Ly5naXRjb25maWciCiAgY2htb2QgNDAwICIke1BBUkFNX1 TRVJfSE9NRX0vLmdpdC1jcmVkZW50aWFscyIKICBjaG1vZCA0MDAgIiR7UEFSQU1fVVNFUl9IT01FfS8uZ2l0Y29uZmlnIgpmaQ KaWYgWyAiJHtXT1JLU1BBQ0VfU1NIX0RJUkVDVE9SWV9CT1VORH0iID0gInRydWUiIF0gOyB0aGVuCiAgY3AgLVIgIiR7V09SS1 QQUNFX1NTSF9ESVJFQ1RPUllfUEFUSH0iICIke1BBUkFNX1VTRVJfSE9NRX0iLy5zc2gKICBjaG1vZCA3MDAgIiR7UEFSQU1fVV FUl9IT01FfSIvLnNzaAogIGNobW9kIC1SIDQwMCAiJHtQQVJBTV9VU0VSX0hPTUV9Ii8uc3NoLyoKZmkKCkNIRUNLT1VUX0RJUj
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/touch /tekton/scripts/script-0-n8tsq
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/chmod +x /tekton/scripts/script-0-n8tsq
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/cat 
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /tekton/bin/entrypoint decode-script /tekton/scripts/script-0-n8tsq
+🚀 process jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /tekton/bin/entrypoint -wait_file /tekton/downward/ready -wait_file_content -post_file /tekton/run/0/out -termination_path /tekton/termination -step_metadata_dir /tekton/run/0/status -results commit,url -entrypoint /tekton/scripts/script-0-n8tsq --
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /ko-app/entrypoint cp /ko-app/entrypoint /tekton/bin/entrypoint 0
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /ko-app/entrypoint step-init step-clone 0
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/touch /tekton/scripts/script-0-n8tsq 0
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/chmod +x /tekton/scripts/script-0-n8tsq 0
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/cat  0
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /tekton/bin/entrypoint decode-script /tekton/scripts/script-0-n8tsq 0
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /bin/sh -c "scriptfile="/tekton/scripts/script-0-n8tsq"
+touch ${scriptfile} && chmod +x ${scriptfile}
+cat > ${s" "riptfile} << '_EOF_'
+IyEvdXNyL2Jpbi9lbnYgc2gKc2V0IC1ldQoKaWYgWyAiJHtQQVJBTV9WRVJCT1NFfSIgPSAidHJ1ZS" gXSA7IHRoZW4KICBzZXQgLXgKZmkKCmlmIFsgIiR7V09SS1NQQUNFX0JBU0lDX0FVVEhfRElSRUNUT1JZX0JPVU5EfSIgPSAidH 1ZSIgXSA7IHRoZW4KICBjcCAiJHtXT1JLU1BBQ0VfQkFTSUNfQVVUSF9ESVJFQ1RPUllfUEFUSH0vLmdpdC1jcmVkZW50aWFscy gIiR7UEFSQU1fVVNFUl9IT01FfS8uZ2l0LWNyZWRlbnRpYWxzIgogIGNwICIke1dPUktTUEFDRV9CQVNJQ19BVVRIX0RJUkVDVE SWV9QQVRIfS8uZ2l0Y29uZmlnIiAiJHtQQVJBTV9VU0VSX0hPTUV9Ly5naXRjb25maWciCiAgY2htb2QgNDAwICIke1BBUkFNX1 TRVJfSE9NRX0vLmdpdC1jcmVkZW50aWFscyIKICBjaG1vZCA0MDAgIiR7UEFSQU1fVVNFUl9IT01FfS8uZ2l0Y29uZmlnIgpmaQ KaWYgWyAiJHtXT1JLU1BBQ0VfU1NIX0RJUkVDVE9SWV9CT1VORH0iID0gInRydWUiIF0gOyB0aGVuCiAgY3AgLVIgIiR7V09SS1 QQUNFX1NTSF9ESVJFQ1RPUllfUEFUSH0iICIke1BBUkFNX1VTRVJfSE9NRX0iLy5zc2gKICBjaG1vZCA3MDAgIiR7UEFSQU1fVV FUl9IT01FfSIvLnNzaAogIGNobW9kIC1SIDQwMCAiJHtQQVJBTV9VU0VSX0hPTUV9Ii8uc3NoLyoKZmkKCkNIRUNLT1VUX0RJUj 0
+💥 exit    jonah/ptp-lab-pipelinerun-m9ptb-clone-repo-pod /tekton/bin/entrypoint -wait_file /tekton/downward/ready -wait_file_content -post_file /tekton/run/0/out -termination_path /tekton/termination -step_metadata_dir /tekton/run/0/status -results commit,url -entrypoint /tekton/scripts/script-0-n8tsq -- 1
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /tekton/scripts/script-0-sqlst sh /tekton/scripts/script-0-sqlst
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/sh /tekton/scripts/script-0-sqlst
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/rm -rf /workspace/output/./*
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/rm -rf /workspace/output/./* 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/rm -rf /workspace/output/./.[!.]*
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/rm -rf /workspace/output/./.[!.]* 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/rm -rf /workspace/output/./..?*
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/rm -rf /workspace/output/./..?* 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /ko-app/git-init -url=https://github.com/nadgowdas/test-app-build -revision= -refspec= -path=/workspace/output/. -sslVerify=true -submodules=true -depth=1 -sparseCheckoutDirectories=
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git init /workspace/output/.
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git init /workspace/output/. 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git remote add origin https://github.com/nadgowdas/test-app-build
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git remote add origin https://github.com/nadgowdas/test-app-build 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git config core.sshCommand "ssh -o StrictHostKeyChecking=accept-new"
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git config core.sshCommand "ssh -o StrictHostKeyChecking=accept-new" 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git config http.sslVerify true
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git config http.sslVerify true 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git symbolic-ref HEAD refs/remotes/origin/HEAD
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git symbolic-ref HEAD refs/remotes/origin/HEAD 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git fetch --recurse-submodules=yes --depth=1 origin --update-head-ok --force HEAD
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https origin https://github.com/nadgowdas/test-app-build
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443 bytes 64
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443 bytes 46
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443 bytes 49
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443 bytes 35
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443 bytes 126
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443 bytes 31
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git fetch-pack --stateless-rpc --stdin --lock-pack --thin --no-progress --depth=1 https://github.com/nadgowdas/test-app-build/
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443 bytes 128
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443 bytes 211
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /ko-app/entrypoint cp /ko-app/entrypoint /tekton/bin/entrypoint
+🚀 process jonah/affinity-assistant-50494112f0-0 /ko-app/nop tekton_run_indefinitely
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /ko-app/entrypoint step-init step-clone
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/sh -c "scriptfile="/tekton/scripts/script-0-sqlst"
+touch ${scriptfile} && chmod +x ${scriptfile}
+cat > ${s" "riptfile} << '_EOF_'
+IyEvdXNyL2Jpbi9lbnYgc2gKc2V0IC1ldQoKaWYgWyAiJHtQQVJBTV9WRVJCT1NFfSIgPSAidHJ1ZS" gXSA7IHRoZW4KICBzZXQgLXgKZmkKCmlmIFsgIiR7V09SS1NQQUNFX0JBU0lDX0FVVEhfRElSRUNUT1JZX0JPVU5EfSIgPSAidH 1ZSIgXSA7IHRoZW4KICBjcCAiJHtXT1JLU1BBQ0VfQkFTSUNfQVVUSF9ESVJFQ1RPUllfUEFUSH0vLmdpdC1jcmVkZW50aWFscy gIiR7UEFSQU1fVVNFUl9IT01FfS8uZ2l0LWNyZWRlbnRpYWxzIgogIGNwICIke1dPUktTUEFDRV9CQVNJQ19BVVRIX0RJUkVDVE SWV9QQVRIfS8uZ2l0Y29uZmlnIiAiJHtQQVJBTV9VU0VSX0hPTUV9Ly5naXRjb25maWciCiAgY2htb2QgNDAwICIke1BBUkFNX1 TRVJfSE9NRX0vLmdpdC1jcmVkZW50aWFscyIKICBjaG1vZCA0MDAgIiR7UEFSQU1fVVNFUl9IT01FfS8uZ2l0Y29uZmlnIgpmaQ KaWYgWyAiJHtXT1JLU1BBQ0VfU1NIX0RJUkVDVE9SWV9CT1VORH0iID0gInRydWUiIF0gOyB0aGVuCiAgY3AgLVIgIiR7V09SS1 QQUNFX1NTSF9ESVJFQ1RPUllfUEFUSH0iICIke1BBUkFNX1VTRVJfSE9NRX0iLy5zc2gKICBjaG1vZCA3MDAgIiR7UEFSQU1fVV FUl9IT01FfSIvLnNzaAogIGNobW9kIC1SIDQwMCAiJHtQQVJBTV9VU0VSX0hPTUV9Ii8uc3NoLyoKZmkKCkNIRUNLT1VUX0RJUj
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/touch /tekton/scripts/script-0-sqlst
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/chmod +x /tekton/scripts/script-0-sqlst
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/cat 
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /tekton/bin/entrypoint decode-script /tekton/scripts/script-0-sqlst
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /tekton/bin/entrypoint -wait_file /tekton/downward/ready -wait_file_content -post_file /tekton/run/0/out -termination_path /tekton/termination -step_metadata_dir /tekton/run/0/status -results commit,url -entrypoint /tekton/scripts/script-0-sqlst --
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443 bytes 75
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443 bytes 220
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git --shallow-file /workspace/output/.git/shallow.lock unpack-objects -q --pack_header=2,6
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git --shallow-file /workspace/output/.git/shallow.lock unpack-objects -q --pack_header=2,6 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git --shallow-file /workspace/output/.git/shallow.lock rev-list --objects --stdin --quiet --alternate-refs
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git fetch-pack --stateless-rpc --stdin --lock-pack --thin --no-progress --depth=1 https://github.com/nadgowdas/test-app-build/ 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git --shallow-file /workspace/output/.git/shallow.lock rev-list --objects --stdin --quiet --alternate-refs 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-list --objects --stdin --not --all --quiet --alternate-refs
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-list --objects --stdin --not --all --quiet --alternate-refs 0
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https tcp 172.17.0.6:26283 -> 140.82.112.4:443
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-remote-https origin https://github.com/nadgowdas/test-app-build 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git gc --auto
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git gc --auto 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git fetch --recurse-submodules=yes --depth=1 origin --update-head-ok --force HEAD 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git show -q --pretty=format:%H FETCH_HEAD
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git show -q --pretty=format:%H FETCH_HEAD 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git checkout -f FETCH_HEAD
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git checkout -f FETCH_HEAD 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git show -q --pretty=format:%H HEAD
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git show -q --pretty=format:%H HEAD 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git show -q --pretty=format:%D HEAD
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git show -q --pretty=format:%D HEAD 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git submodule update --recursive --init --depth=1
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-submodule /usr/libexec/git-core/git-submodule update --recursive --init --depth=1
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/basename /usr/libexec/git-core/git-submodule
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/sed -e "s/-/ /"
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/basename /usr/libexec/git-core/git-submodule 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/sed -e "s/-/ /" 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git --exec-path
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git --exec-path 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/basename -- /usr/libexec/git-core/git-submodule
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/sed -e "s/-/ /"
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/basename -- /usr/libexec/git-core/git-submodule 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/sed -e "s/-/ /" 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git sh-i18n--envsubst --variables "usage: $dashless $USAGE"
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-sh-i18n--envsubst --variables "usage: $dashless $USAGE"
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-sh-i18n--envsubst --variables "usage: $dashless $USAGE" 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git sh-i18n--envsubst --variables "usage: $dashless $USAGE" 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git sh-i18n--envsubst "usage: $dashless $USAGE"
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-sh-i18n--envsubst  "usage: $dashless $USAGE"
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-sh-i18n--envsubst  "usage: $dashless $USAGE" 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git sh-i18n--envsubst "usage: $dashless $USAGE" 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/uname -s
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/uname -s 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-parse --git-dir
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-parse --git-dir 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-parse --git-path objects
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-parse --git-path objects 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-parse -q --git-dir
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-parse -q --git-dir 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-parse --is-inside-work-tree
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-parse --is-inside-work-tree 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-parse --show-prefix
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-parse --show-prefix 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-parse --show-toplevel
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git rev-parse --show-toplevel 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/sed -e s/-/_/g
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/sed -e s/-/_/g 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git submodule--helper init --
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git submodule--helper init -- 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git submodule--helper update-clone --depth --depth=1 --
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git submodule--helper update-clone --depth --depth=1 -- 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/libexec/git-core/git-submodule /usr/libexec/git-core/git-submodule update --recursive --init --depth=1 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git submodule update --recursive --init --depth=1 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git show -q --pretty=format:%H HEAD
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git show -q --pretty=format:%H HEAD 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /ko-app/git-init -url=https://github.com/nadgowdas/test-app-build -revision= -refspec= -path=/workspace/output/. -sslVerify=true -submodules=true -depth=1 -sparseCheckoutDirectories= 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git rev-parse HEAD
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /usr/bin/git rev-parse HEAD 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/sh /tekton/scripts/script-0-sqlst 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /tekton/bin/entrypoint -wait_file /tekton/downward/ready -wait_file_content -post_file /tekton/run/0/out -termination_path /tekton/termination -step_metadata_dir /tekton/run/0/status -results commit,url -entrypoint /tekton/scripts/script-0-sqlst -- 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /tekton/scripts/script-0-srrzz /tekton/scripts/script-0-srrzz
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /bin/ls -lRth /workspace/source/
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /bin/ls -lRth /workspace/source/ 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /tekton/scripts/script-0-srrzz /tekton/scripts/script-0-srrzz 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /ko-app/entrypoint cp /ko-app/entrypoint /tekton/bin/entrypoint 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /ko-app/entrypoint cp /ko-app/entrypoint /tekton/bin/entrypoint
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /dev/fd/6 init
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /ko-app/entrypoint step-init step-print-ls
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /bin/sh -c "scriptfile="/tekton/scripts/script-0-srrzz"
+touch ${scriptfile} && chmod +x ${scriptfile}
+cat > ${s" "riptfile} << '_EOF_'
+IyEvYmluL3NoCnNldCAtZQpzZXQgLWUKbHMgLWxSdGggL3dvcmtzcGFjZS9zb3VyY2UvCg==
+_EOF_" "/tekton/bin/entrypoint decode-script "${scriptfile}"
+"
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /bin/touch /tekton/scripts/script-0-srrzz
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /bin/chmod +x /tekton/scripts/script-0-srrzz
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /bin/cat 
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /tekton/bin/entrypoint decode-script /tekton/scripts/script-0-srrzz
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /ko-app/workingdirinit /workspace/source
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /tekton/bin/entrypoint -wait_file /tekton/downward/ready -wait_file_content -post_file /tekton/run/0/out -termination_path /tekton/termination -step_metadata_dir /tekton/run/0/status -entrypoint /tekton/scripts/script-0-srrzz --
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /ko-app/entrypoint cp /ko-app/entrypoint /tekton/bin/entrypoint
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /ko-app/entrypoint step-init step-build-and-push
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor 
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:29924 -> 140.82.113.33:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:29924 -> 140.82.113.33:443 bytes 277
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:29924 -> 140.82.113.33:443 bytes 64
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:29924 -> 140.82.113.33:443 bytes 86
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:29924 -> 140.82.113.33:443 bytes 65
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:29924 -> 140.82.113.33:443 bytes 31
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:29924 -> 140.82.113.33:443 bytes 196
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:29924 -> 140.82.113.33:443 bytes 134
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:29924 -> 140.82.113.33:443 bytes 97
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 296
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 132
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 506
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 663
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 319
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 538
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 253
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 466
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 253
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 466
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /ko-app/entrypoint step-init step-clone 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/touch /tekton/scripts/script-0-sqlst 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/chmod +x /tekton/scripts/script-0-sqlst 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/cat  0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /tekton/bin/entrypoint decode-script /tekton/scripts/script-0-sqlst 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-clone-repo-pod /bin/sh -c "scriptfile="/tekton/scripts/script-0-sqlst"
+touch ${scriptfile} && chmod +x ${scriptfile}
+cat > ${s" "riptfile} << '_EOF_'
+IyEvdXNyL2Jpbi9lbnYgc2gKc2V0IC1ldQoKaWYgWyAiJHtQQVJBTV9WRVJCT1NFfSIgPSAidHJ1ZS" gXSA7IHRoZW4KICBzZXQgLXgKZmkKCmlmIFsgIiR7V09SS1NQQUNFX0JBU0lDX0FVVEhfRElSRUNUT1JZX0JPVU5EfSIgPSAidH 1ZSIgXSA7IHRoZW4KICBjcCAiJHtXT1JLU1BBQ0VfQkFTSUNfQVVUSF9ESVJFQ1RPUllfUEFUSH0vLmdpdC1jcmVkZW50aWFscy gIiR7UEFSQU1fVVNFUl9IT01FfS8uZ2l0LWNyZWRlbnRpYWxzIgogIGNwICIke1dPUktTUEFDRV9CQVNJQ19BVVRIX0RJUkVDVE SWV9QQVRIfS8uZ2l0Y29uZmlnIiAiJHtQQVJBTV9VU0VSX0hPTUV9Ly5naXRjb25maWciCiAgY2htb2QgNDAwICIke1BBUkFNX1 TRVJfSE9NRX0vLmdpdC1jcmVkZW50aWFscyIKICBjaG1vZCA0MDAgIiR7UEFSQU1fVVNFUl9IT01FfS8uZ2l0Y29uZmlnIgpmaQ KaWYgWyAiJHtXT1JLU1BBQ0VfU1NIX0RJUkVDVE9SWV9CT1VORH0iID0gInRydWUiIF0gOyB0aGVuCiAgY3AgLVIgIiR7V09SS1 QQUNFX1NTSF9ESVJFQ1RPUllfUEFUSH0iICIke1BBUkFNX1VTRVJfSE9NRX0iLy5zc2gKICBjaG1vZCA3MDAgIiR7UEFSQU1fVV FUl9IT01FfSIvLnNzaAogIGNobW9kIC1SIDQwMCAiJHtQQVJBTV9VU0VSX0hPTUV9Ii8uc3NoLyoKZmkKCkNIRUNLT1VUX0RJUj 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /ko-app/workingdirinit /workspace/source
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /tekton/bin/entrypoint -wait_file /tekton/downward/ready -wait_file_content -post_file /tekton/run/0/out -termination_path /tekton/termination -step_metadata_dir /tekton/run/0/status -results IMAGE-DIGEST,IMAGE_DIGEST,IMAGE_URL --
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 253
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 466
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sh -c "yum -y upgrade"
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum /usr/bin/yum -y upgrade
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /ko-app/entrypoint cp /ko-app/entrypoint /tekton/bin/entrypoint 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /dev/fd/6 init 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /ko-app/entrypoint step-init step-print-ls 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /bin/touch /tekton/scripts/script-0-srrzz 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /bin/chmod +x /tekton/scripts/script-0-srrzz 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /bin/cat  0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /tekton/bin/entrypoint decode-script /tekton/scripts/script-0-srrzz 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /bin/sh -c "scriptfile="/tekton/scripts/script-0-srrzz"
+touch ${scriptfile} && chmod +x ${scriptfile}
+cat > ${s" "riptfile} << '_EOF_'
+IyEvYmluL3NoCnNldCAtZQpzZXQgLWUKbHMgLWxSdGggL3dvcmtzcGFjZS9zb3VyY2UvCg==
+_EOF_" "/tekton/bin/entrypoint decode-script "${scriptfile}"
+" 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /ko-app/workingdirinit /workspace/source 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /ko-app/entrypoint cp /ko-app/entrypoint /tekton/bin/entrypoint 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-print-src-pod /tekton/bin/entrypoint -wait_file /tekton/downward/ready -wait_file_content -post_file /tekton/run/0/out -termination_path /tekton/termination -step_metadata_dir /tekton/run/0/status -entrypoint /tekton/scripts/script-0-srrzz -- 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /ko-app/entrypoint step-init step-build-and-push 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /ko-app/workingdirinit /workspace/source 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /sbin/ldconfig -p
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /sbin/ldconfig -p 0
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 0.0.0.0:0 -> 0.0.0.0:0
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:61079 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:61079 -> 23.216.132.62:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:61079 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:61079 -> 23.216.132.62:443 bytes 263
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:61079 -> 23.216.132.62:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:61079 -> 23.216.132.62:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:61591 -> 23.216.132.62:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:62615 -> 23.216.132.62:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63127 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:61591 -> 23.216.132.62:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:62615 -> 23.216.132.62:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63127 -> 23.216.132.62:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:61591 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:61591 -> 23.216.132.62:443 bytes 289
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:62615 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:62615 -> 23.216.132.62:443 bytes 291
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63127 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63127 -> 23.216.132.62:443 bytes 284
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63127 -> 23.216.132.62:443 bytes 292
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:61591 -> 23.216.132.62:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:61591 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:62615 -> 23.216.132.62:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:62615 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63127 -> 23.216.132.62:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63127 -> 23.216.132.62:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63639 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63639 -> 23.216.132.62:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63639 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63639 -> 23.216.132.62:443 bytes 266
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63639 -> 23.216.132.62:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:63639 -> 23.216.132.62:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:64151 -> 23.216.132.62:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:64663 -> 23.216.132.62:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:65175 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:64151 -> 23.216.132.62:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:64663 -> 23.216.132.62:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:65175 -> 23.216.132.62:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:64151 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:64151 -> 23.216.132.62:443 bytes 292
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:64663 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:64663 -> 23.216.132.62:443 bytes 294
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:65175 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:65175 -> 23.216.132.62:443 bytes 287
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:65175 -> 23.216.132.62:443 bytes 293
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:65175 -> 23.216.132.62:443 bytes 295
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:64151 -> 23.216.132.62:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:64151 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:64663 -> 23.216.132.62:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:64663 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:65175 -> 23.216.132.62:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:65175 -> 23.216.132.62:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:152 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:152 -> 23.216.132.62:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:152 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:152 -> 23.216.132.62:443 bytes 274
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:152 -> 23.216.132.62:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:152 -> 23.216.132.62:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:21707 -> 23.216.132.61:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:22219 -> 23.216.132.61:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:22731 -> 23.216.132.61:443
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 0.0.0.0:0 -> 0.0.0.0:0
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 0.0.0.0:0 -> 0.0.0.0:0
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 0.0.0.0:0 -> 0.0.0.0:0
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 0.0.0.0:0 -> 0.0.0.0:0
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 0.0.0.0:0 -> 0.0.0.0:0
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 0.0.0.0:0 -> 0.0.0.0:0
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:21707 -> 23.216.132.61:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:22219 -> 23.216.132.61:443 bytes 517
+
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:21707 -> 23.216.132.61:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:21707 -> 23.216.132.61:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:22219 -> 23.216.132.61:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:22219 -> 23.216.132.61:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:22731 -> 23.216.132.61:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:22731 -> 23.216.132.61:443
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum /usr/bin/yum -y upgrade 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sh -c "yum install -y wget"
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum /usr/bin/yum install -y wget
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /sbin/ldconfig -p
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /sbin/ldconfig -p 0
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 0.0.0.0:0 -> 0.0.0.0:0
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:664 -> 23.216.132.62:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:1176 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:664 -> 23.216.132.62:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:1176 -> 23.216.132.62:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:664 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:664 -> 23.216.132.62:443 bytes 246
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:1176 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:1176 -> 23.216.132.62:443 bytes 244
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:664 -> 23.216.132.62:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:664 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:1176 -> 23.216.132.62:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum tcp 172.17.0.7:1176 -> 23.216.132.62:443
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/rpmkeys --checksig --root / --verbose "--define=_pkgverify_level signature" "--define=_pkgverify_flags 0x0" -
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/rpmkeys --checksig --root / --verbose "--define=_pkgverify_level signature" "--define=_pkgverify_flags 0x0" - 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/rpmkeys --checksig --root / --verbose "--define=_pkgverify_level signature" "--define=_pkgverify_flags 0x0" -
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/rpmkeys --checksig --root / --verbose "--define=_pkgverify_level signature" "--define=_pkgverify_flags 0x0" - 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sh /var/tmp/rpm-tmp.ovUEUJ 1
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /sbin/install-info /usr/share/info/wget.info.gz /usr/share/info/dir
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /sbin/install-info /usr/share/info/wget.info.gz /usr/share/info/dir 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sh /var/tmp/rpm-tmp.ovUEUJ 1 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sh /var/tmp/rpm-tmp.iEGK6L 0 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /sbin/ldconfig 
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /sbin/ldconfig  0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sh /var/tmp/rpm-tmp.iEGK6L 0 0 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sh /var/tmp/rpm-tmp.6LabnL 0 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/sbin/fix-info-dir /usr/sbin/fix-info-dir /usr/share/info/dir
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/basename --coreutils-prog-shebang=basename /bin/basename /usr/share/info/dir
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/basename --coreutils-prog-shebang=basename /bin/basename /usr/share/info/dir 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/dirname --coreutils-prog-shebang=dirname /bin/dirname /usr/share/info/dir
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/dirname --coreutils-prog-shebang=dirname /bin/dirname /usr/share/info/dir 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/cp --coreutils-prog-shebang=cp /bin/cp dir dir.old
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/cp --coreutils-prog-shebang=cp /bin/cp dir dir.old 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sed -n -e "/\* /{
+s/).*$//g
+s/\.gz$//
+s/\.info$//
+s/^.*(//p
+}"
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sed -e "1,/^\*\([ 	]\)\{1,\}Menu:/d" -e "s/^\*\([ 	]\)\{1,\}/* /" -e "s/\([ 	]\)\{1,\}$//g"
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sed -e "1,/^\*\([ 	]\)\{1,\}Menu:/d" -e "s/^\*\([ 	]\)\{1,\}/* /" -e "s/\([ 	]\)\{1,\}$//g" 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sed -n -e "/\* /{
+s/).*$//g
+s/\.gz$//
+s/\.info$//
+s/^.*(//p
+}" 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sort --coreutils-prog-shebang=sort /bin/sort -u
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sort --coreutils-prog-shebang=sort /bin/sort -u 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/ls --coreutils-prog-shebang=ls /bin/ls -F
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/ls --coreutils-prog-shebang=ls /bin/ls -F 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sed -e /\/$/d -e /[-.][0-9]/d -e /^dir$/d -e /^dir.old$/d -e s/[*@]$// -e s/\.gz$// -e s/\.info$//
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sort --coreutils-prog-shebang=sort /bin/sort
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sed -e /\/$/d -e /[-.][0-9]/d -e /^dir$/d -e /^dir.old$/d -e s/[*@]$// -e s/\.gz$// -e s/\.info$// 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sort --coreutils-prog-shebang=sort /bin/sort 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/comm --coreutils-prog-shebang=comm /bin/comm -13 /usr/tmp/fx45.info /usr/tmp/fy45.info
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/comm --coreutils-prog-shebang=comm /bin/comm -13 /usr/tmp/fx45.info /usr/tmp/fy45.info 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/rm --coreutils-prog-shebang=rm /bin/rm -f /usr/tmp/fx45.info /usr/tmp/fy45.info
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/rm --coreutils-prog-shebang=rm /bin/rm -f /usr/tmp/fx45.info /usr/tmp/fy45.info 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/rm --coreutils-prog-shebang=rm /bin/rm -f /usr/tmp/fx45.info /usr/tmp/fy45.info
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/sbin/fix-info-dir /usr/sbin/fix-info-dir /usr/share/info/dir 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/rm --coreutils-prog-shebang=rm /bin/rm -f /usr/tmp/fx45.info /usr/tmp/fy45.info 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sh /var/tmp/rpm-tmp.6LabnL 0 0 0
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/yum /usr/bin/yum install -y wget 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sh -c "curl -L https://download.docker.com/linux/static/stable/x86_64/docker-19.03.0.tgz --output /tmp/doc" er-19.03.0.tgz
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/curl -L https://download.docker.com/linux/static/stable/x86_64/docker-19.03.0.tgz --output /tmp/docker-19.03.0.tgz
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/curl tcp 172.17.0.7:15061 -> 13.224.207.98:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/curl tcp 172.17.0.7:15061 -> 13.224.207.98:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/curl tcp 172.17.0.7:15061 -> 13.224.207.98:443 bytes 64
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/curl tcp 172.17.0.7:15061 -> 13.224.207.98:443 bytes 46
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/curl tcp 172.17.0.7:15061 -> 13.224.207.98:443 bytes 49
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/curl tcp 172.17.0.7:15061 -> 13.224.207.98:443 bytes 35
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/curl tcp 172.17.0.7:15061 -> 13.224.207.98:443 bytes 99
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/curl tcp 172.17.0.7:15061 -> 13.224.207.98:443 bytes 31
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/curl tcp 172.17.0.7:15061 -> 13.224.207.98:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/curl tcp 172.17.0.7:15061 -> 13.224.207.98:443
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/curl -L https://download.docker.com/linux/static/stable/x86_64/docker-19.03.0.tgz --output /tmp/docker-19.03.0.tgz 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sh -c "wget -O jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 &&    chmod +x ./jq &" "    cp jq /usr/bin"
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget -O jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget tcp 172.17.0.7:21132 -> 140.82.112.4:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget tcp 172.17.0.7:21132 -> 140.82.112.4:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget tcp 172.17.0.7:21132 -> 140.82.112.4:443 bytes 6
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget tcp 172.17.0.7:21132 -> 140.82.112.4:443 bytes 58
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget tcp 172.17.0.7:21132 -> 140.82.112.4:443 bytes 206
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget tcp 172.17.0.7:25823 -> 185.199.110.133:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget tcp 172.17.0.7:25823 -> 185.199.110.133:443 bytes 517
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget tcp 172.17.0.7:25823 -> 185.199.110.133:443 bytes 6
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget tcp 172.17.0.7:25823 -> 185.199.110.133:443 bytes 74
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget tcp 172.17.0.7:25823 -> 185.199.110.133:443 bytes 679
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget tcp 172.17.0.7:21132 -> 140.82.112.4:443
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/wget -O jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 0
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /bin/sh tcp 172.17.0.7:25823 -> 185.199.110.133:443
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/chmod --coreutils-prog-shebang=chmod /usr/bin/chmod +x ./jq
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/chmod --coreutils-prog-shebang=chmod /usr/bin/chmod +x ./jq 0
+🚀 process jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/cp --coreutils-prog-shebang=cp /usr/bin/cp jq /usr/bin
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /usr/bin/cp --coreutils-prog-shebang=cp /usr/bin/cp jq /usr/bin 0
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 253
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 253
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 466
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:2712 -> 23.216.132.62:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:1688 -> 23.216.132.62:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:2200 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:1688 -> 23.216.132.62:443 bytes 296
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:2200 -> 23.216.132.62:443 bytes 296
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:2712 -> 23.216.132.62:443 bytes 296
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:2712 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:2200 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:2712 -> 23.216.132.62:443 bytes 466
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:1688 -> 23.216.132.62:443 bytes 80
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:2712 -> 23.216.132.62:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:2712 -> 23.216.132.62:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443 bytes 24
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:4324 -> 23.216.132.54:443
+🔌 connect jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:26328 -> 140.82.112.33:443
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:26328 -> 140.82.112.33:443 bytes 277
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:26328 -> 140.82.112.33:443 bytes 64
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:26328 -> 140.82.112.33:443 bytes 86
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:26328 -> 140.82.112.33:443 bytes 62
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:26328 -> 140.82.112.33:443 bytes 31
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:26328 -> 140.82.112.33:443 bytes 155
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:26328 -> 140.82.112.33:443 bytes 166
+📤 sendmsg jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor tcp 172.17.0.7:26328 -> 140.82.112.33:443 bytes 109
+<dup lines removed>
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /kaniko/executor  0
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /tekton/bin/entrypoint tcp 172.17.0.7:2200 -> 23.216.132.62:443
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /tekton/bin/entrypoint tcp 172.17.0.7:1688 -> 23.216.132.62:443
+🧹 close   jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /tekton/bin/entrypoint tcp 172.17.0.7:26328 -> 140.82.112.33:443
+💥 exit    jonah/ptp-lab-pipelinerun-bwp7j-build-and-push-image-pod /tekton/bin/entrypoint -wait_file /tekton/downward/ready -wait_file_content -post_file /tekton/run/0/out -termination_path /tekton/termination -step_metadata_dir /tekton/run/0/status -results IMAGE-DIGEST,IMAGE_DIGEST,IMAGE_URL -- 0
+💥 exit    jonah/affinity-assistant-50494112f0-0 /ko-app/nop tekton_run_indefinitely 0
